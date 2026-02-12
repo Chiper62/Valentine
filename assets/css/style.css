@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  position: relative;
+  height: 50%;
+  width: 30%;
+  background: #FCFBFB;
+  box-shadow: 0 10px 30px rgba(241, 44, 83, 0.4),0 0 20px rgba(241, 44, 83, 0.2);
+  border-radius: 26px;
+  overflow: hidden;
+}
+span{
+  display: flex;
+  justify-content: center;
+}
+.image{
+  width: 50%;
+  user-select: none;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 100;
+  z-index: 999;
+  user-select: none;
+}
+.btn-property{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  margin-top: 40px;
+}
+.yesbtn{
+  background-color: #ff4d6d;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 3% 9%;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+.yesbtn:hover{
+  background-color: #e6004c;
+  box-shadow: 0 0 20px rgba(233, 30, 99, 0.6);
+  transform: scale(1.1);
+}
+
+.nobtn{
+  background-color: #dee2e6;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 3% 9%;
+  border-radius: 26px;
+  box-shadow: 0 0 10px rgba(90, 88, 88, 0.655);
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.4s ease; 
+}
+@media (max-width: 992px) {
+  .container{
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .container{
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .yesbtn,
+  .nobtn{
+    font-size: 1rem;
+    padding: 8px 25px;
+  }
+}
